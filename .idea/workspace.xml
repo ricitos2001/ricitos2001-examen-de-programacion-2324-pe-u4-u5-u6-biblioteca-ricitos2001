@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="beac7c88-befd-42a6-a9f7-7338de7cdd8e" name="Changes" comment="Ejercicio-2" />
+    <list default="true" id="beac7c88-befd-42a6-a9f7-7338de7cdd8e" name="Changes" comment="Ejercicio-2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,30 +92,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.2324-pe-u4-u5-u6-biblioteca-ricitos2001 [dokkaHtml].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build 2324-pe-u4-u5-u6-biblioteca-ricitos2001.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build plantilla.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build ricitos2001-examen-de-programacion-2324-pe-u4-u5-u6-biblioteca-ricitos2001.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.CarreraKt.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt (1).executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Ejercicio-2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/programacion web/ricitos2001-examen-de-programacion-2324-pe-u4-u5-u6-biblioteca-ricitos2001&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.2324-pe-u4-u5-u6-biblioteca-ricitos2001 [dokkaHtml].executor": "Run",
+    "Gradle.Build 2324-pe-u4-u5-u6-biblioteca-ricitos2001.executor": "Run",
+    "Gradle.Build plantilla.executor": "Run",
+    "Gradle.Build ricitos2001-examen-de-programacion-2324-pe-u4-u5-u6-biblioteca-ricitos2001.executor": "Run",
+    "Kotlin.CarreraKt.executor": "Run",
+    "Kotlin.MainKt (1).executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "Ejercicio-3",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/programacion web/ricitos2001-examen-de-programacion-2324-pe-u4-u5-u6-biblioteca-ricitos2001",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="2324-pe-u4-u5-u6-biblioteca-ricitos2001 [dokkaHtml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
