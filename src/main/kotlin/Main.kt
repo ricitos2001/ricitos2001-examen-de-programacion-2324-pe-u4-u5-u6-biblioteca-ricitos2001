@@ -6,7 +6,7 @@ enum class EstadoLibro {
     DISPONIBLE, PRESTADO
 }
 
-// clase UtilidadesBiblioteca
+// clase estatica UtilidadesBiblioteca
 class UtilidadesBiblioteca {
     companion object {
         fun generarIdentificadorUnico(): String {
