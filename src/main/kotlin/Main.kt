@@ -3,7 +3,7 @@ import EstadoLibro.*
 // clase de datos Libros
 data class Libros(var id: String, var titulo: String, var autor: String, var anioDePublicacion: Int, var tematica: String, var estado: EstadoLibro = DISPONIBLE)
 
-// clase enumerada para el estado del libro
+// clase numerica para el estado de los libros
 enum class EstadoLibro {
     DISPONIBLE, PRESTADO
 }
