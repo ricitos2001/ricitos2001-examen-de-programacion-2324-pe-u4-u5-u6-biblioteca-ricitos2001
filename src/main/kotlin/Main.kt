@@ -44,7 +44,7 @@ class GestorDeBiblioteca {
             return "el libro no encontrado por título"
         }
     }
-    // metodo para registrar prestamos
+    // metodo para registrar el prestamo de un libro
     fun registrarPrestamo(id: String):String {
         val libro = catalogo.find { it.id == id }
         if (libro != null && libro.estado == DISPONIBLE) {
