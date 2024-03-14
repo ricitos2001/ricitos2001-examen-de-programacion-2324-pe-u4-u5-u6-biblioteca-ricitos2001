@@ -1,7 +1,10 @@
 import EstadoLibro.*
 import java.util.UUID
+
+//clase de datos Libros
 data class Libros(var id: String, var titulo: String, var autor: String, var anioDePublicacion: Int, var tematica: String, var estado: EstadoLibro = DISPONIBLE)
 
+// clase numerica para el estado de los libros
 enum class EstadoLibro {
     DISPONIBLE, PRESTADO
 }
@@ -14,7 +17,7 @@ class UtilidadesBiblioteca {
         }
     }
 }
-
+// clase GestorDeBiblioteca
 class GestorDeBiblioteca {
     var catalogo = mutableListOf<Libros>()
     private var registroPrestamos = mutableListOf<Libros>()
@@ -41,7 +44,7 @@ class GestorDeBiblioteca {
             return "el libro no encontrado por título"
         }
     }
-    // metodo para
+    // metodo para registrar el prestamo de un libro
     fun registrarPrestamo(id: String):String {
         val libro = catalogo.find { it.id == id }
         if (libro != null && libro.estado == DISPONIBLE) {
