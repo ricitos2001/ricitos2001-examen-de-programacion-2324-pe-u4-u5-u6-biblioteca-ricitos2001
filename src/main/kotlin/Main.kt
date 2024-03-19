@@ -72,7 +72,7 @@ class GestorDeBiblioteca {
         return catalogo.filter { it.estado == estado }
     }*/
     // metodo para mostrar el estado de un libro
-    fun mostrarEstado() {
+    fun mostrarEstad() {
         catalogo.forEach {
             println("${it.titulo}: ${it.estado}")
         }
