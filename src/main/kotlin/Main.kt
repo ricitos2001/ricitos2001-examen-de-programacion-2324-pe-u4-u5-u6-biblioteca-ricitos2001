@@ -3,10 +3,14 @@ import EstadoLibro.*
 // clase de datos Libros
 data class Libros(var id: String, var titulo: String, var autor: String, var anioDePublicacion: Int, var tematica: String, var estado: EstadoLibro = DISPONIBLE)
 
-// clase enumerada para el estado del libro
+// clase de datos Prestamo
+//data class Prestamo(val idLibro: String, val idUsuario: String)
+
+// clase numerica para el estado de los libros
 enum class EstadoLibro {
     DISPONIBLE, PRESTADO
 }
+
 // clase para gestionar la libreria
 class GestorDeBiblioteca {
     var catalogo = mutableListOf<Libros>()
@@ -23,42 +27,50 @@ class GestorDeBiblioteca {
         }
     }
     // metodo para eliminar libros
-    fun eliminarLibro(id: String):String {
-        val libro = catalogo.find { it.id == id }
+    fun eliminarLibro(idLibro: String):String {
+        val libro = catalogo.find { it.id == idLibro }
         if (libro != null) {
             catalogo.remove(libro)
+            // catalogo.removeAll { it.id == idLibro }
             return "el libro ha sido eliminado"
         }
         else {
             return "el libro no encontrado por título"
         }
     }
-    // metodo para
-    fun registrarPrestamo(id: String):String {
-        val libro = catalogo.find { it.id == id }
+
+    // metodo para registrar el prestamo de un libro
+    fun registrarPrestamo(idLibro: String):String {
+        val libro = catalogo.find { it.id == idLibro }
         if (libro != null && libro.estado == DISPONIBLE) {
             libro.estado = PRESTADO
             registroPrestamos.add(libro)
+            // registroPrestamos.add(Prestamo(idLibro, idUsuario))
             return "el libro  ha sido prestado"
         } else {
             return "el libro no esta disponible para prestamo."
         }
     }
-    //metodo para devolver un libro
-    fun devolverLibro(id: String):String {
-        val libro = catalogo.find { it.id == id }
+    // metodo para devolver un libro
+    fun devolverLibro(idLibro: String):String {
+        val libro = catalogo.find { it.id == idLibro }
         if (libro != null && libro.estado == PRESTADO) {
             libro.estado = DISPONIBLE
             registroPrestamos.remove(libro)
+            // registroPrestamos.removeAll { it.idLibro == idLibro }
             return "el libro  ha sido devuelto"
         } else {
             return "el libro aun no ha sido prestado"
         }
     }
-    //metodo para consultar la disponibilidad de un libro
+    // metodo para consultar la disponibilidad de un libro
     fun consultarDisponibilidad(id: String): Libros? {
         return catalogo.find { it.id == id && it.estado == DISPONIBLE }
     }
+    // metodo para ordenar los libros por estado
+    /*fun librosPorEstado(estado: EstadoLibro): List<Libros> {
+        return catalogo.filter { it.estado == estado }
+    }*/
     // metodo para mostrar el estado de un libro
     fun mostrarEstado() {
         catalogo.forEach {
